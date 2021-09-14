@@ -1640,6 +1640,8 @@ input.error {
   right: 25px;
   bottom: 25px;
   transform: rotate(90deg);
+  cursor: pointer;
+  display: none;
 }
 
 @media (min-width: 576px) {
