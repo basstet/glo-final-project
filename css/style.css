@@ -305,7 +305,6 @@ input.error {
   background-image: url("../images/menu-icons.png");
   background-repeat: no-repeat;
   height: 16px;
-  display: inline-block;
   float: left;
   margin-right: 9px;
 }
@@ -609,6 +608,30 @@ p.services-image_mobile {
   -webkit-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
 }
+/* стили блоков услуг имеют фиксированные размеры в пикселях, поэтому внесу изменения, чтобы выглядело приемлемо: */
+@media (min-width: 581px) {
+  .glo-carousel .service-block {
+    margin: 30px 0;
+    width: 100%;
+    background: #f5f6f7;
+  }
+  .glo-carousel .service-image {
+    width: 38%;
+    max-width: 220px;
+  }
+  .glo-carousel .service-button a {
+    font-size: 14px;
+    padding: 7px 20px;
+  }
+  .glo-carousel .service-text {
+    position: relative;
+    margin-left: 38%;
+  }
+  .glo-carousel .service-text h3 {
+    font-size: 18px;
+  }
+}
+/* конец изменений */
 .order {
   background: url("../images/order2-bg.jpg") no-repeat center;
   padding: 80px 0px;
@@ -758,8 +781,6 @@ p.services-image_mobile {
   border-radius: 100%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
-.about-wrap {
-}
 .about-inner:after {
   position: absolute;
   content: "";
@@ -824,7 +845,6 @@ p.services-image_mobile {
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  display: inline-block;
   float: left;
   margin-right: 15px;
 }
@@ -848,8 +868,6 @@ p.services-image_mobile {
 .footer-logotype {
   position: absolute;
   height: 100px;
-}
-.footer-copyright {
 }
 .footer-copyright span {
   color: #ffb135;
@@ -1322,8 +1340,18 @@ p.services-image_mobile {
   .offer-heading {
     max-width: 75%;
   }
+  .glo-carousel .service-image {
+    display: none;
+  }
+  .glo-carousel .service-text {
+    margin-left: 0;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 580px) {
+  .service-block {
+    width: 100%;
+  }
   .service-image {
     display: none;
   }
@@ -1459,14 +1487,14 @@ input.error {
   }
   ::-webkit-scrollbar-button {
     background-image: url("");
-    background-repat: no-repeat;
+    background-repeat: no-repeat;
     height: 0px;
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: #008f29;
     border-radius: 0px;
-    webkit-border-radius: 0px;
+    -webkit-border-radius: 0px;
   }
   ::-webkit-scrollbar-track {
     background-color: #2c2c2c;
@@ -1645,15 +1673,19 @@ input.error {
 }
 
 @media (min-width: 576px) {
-  .benefits-wrap {
+  .benefits-wrap,
+  .benefits-inner {
     width: 100%;
     max-width: 576px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
-  .benefits-wrap {
+  .benefits-wrap,
+  .benefits-inner {
     width: 100%;
     max-width: 576px;
+    margin: 0 auto;
   }
 }

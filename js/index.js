@@ -3,8 +3,44 @@
 
 import togglePopup from './modules/popup';
 import scrollTop from './modules/scrollTop';
+import Carousel from './modules/carousel';
 
 // модальные окна:
 togglePopup();
+
 // кнопка плавной прокрутки вверх:
 scrollTop();
+
+// карусель "Выгоды для клиентов":
+const carouselBenefits = new Carousel({
+  main: '.benefits-inner',
+  wrap: '.benefits-wrap',
+  prev: '.benefits__arrow--left',
+  next: '.benefits__arrow--right',
+  slidesToShow: 3,
+  infinity: true,
+  responsive: [
+    {
+      breakpoint: 576,
+      slidesToShow: 1
+    }
+  ]
+});
+carouselBenefits.init();
+
+// карусель "Наши услуги":
+const carouselServices = new Carousel({
+  main: '.services-wrap',
+  wrap: '.services-wrap .row',
+  prev: '.services__arrow--left',
+  next: '.services__arrow--right',
+  slidesToShow: 2,
+  infinity: true,
+  responsive: [
+    {
+      breakpoint: 576,
+      slidesToShow: 1
+    }
+  ]
+});
+carouselServices.init();
