@@ -530,7 +530,7 @@
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'images/marker.png',
+            // iconImageHref: 'images/marker.png',
             // Размеры метки.
             iconImageSize: [30, 42],
             // Смещение левого верхнего угла иконки относительно
@@ -569,146 +569,129 @@
 			</div>
 		</div>
 	</div>
-    
-    
-    
-    
-    <div id="callback" class="order-call-modal box-modal">
-        <div class="box-modal_title">
-            <div class="box-modal_topic text-center text-warning" style="margin-left: 0px;">Заказ звонка</div>
-        </div>
-        <div class="box-modal_body rf">
-            <p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все вопросы!</p>
-            <form name="callback-form">
-                <div class="form-group">
-                    <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
-                </div>
-                <div class="form-action">
-                    <div class="text-center"><button type="submit" class="btn btn-warning feedback">Свяжитесь со мной!</button></div>
-                </div>
-                <input type="hidden" name="page" value="Окна">
-            </form>
-            <span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
-        </div>
-    </div>
-    
-    
-    <div id="order" class="order-call-modal box-modal">
-        <div class="box-modal_title">
-            <div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Программа <br>«Профремонт»</div>
-        </div>
-        <div class="box-modal_body rf">
-            <p class="text-center">Оставьте, пожалуйста, заявку и мы свяжемся с Вами, чтобы рассказать детали акции и Вашу скидку!</p>
-            <form name="order-form">
-                <div class="form-group">
-                    <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
-                </div>
-                <div class="form-action">
-                    <div class="text-center"><button type="submit" class="btn btn-success feedback">Принять участие!</button></div>
-                </div>
-                <input type="hidden" name="page" value="Окна">
-            </form>
-            <span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
-        </div>
-    </div>
-    
-    
-    <div id="application" class="order-call-modal box-modal">
-        <div class="box-modal_title">
-            <div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Стандартные ПВХ-окна</div>
-        </div>
-        <div class="box-modal_body rf">
-            <p class="text-center">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
-            <form name="application-form">
-                <div class="form-group">
-                    <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
-                </div>
-                <div class="form-action">
-                    <div class="text-center"><button type="submit" class="btn btn-success feedback">Вызвать замерщика!</button></div>
-                </div>
-                <input type="hidden" name="page" value="Окна">
-                <input type="hidden" name="subject">
-            </form>
-            <span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
-        </div>
-    </div>
-    
-    
-    <div class="box-modal" id="responseMessage">
-        <div class="box-modal_title">
-            <h2>Статус отправки формы:</h2>
-        </div>
-        <div class="box-modal_body">
-            <div class="modal-content"></div>
-            <br /><br />
-            <a href="#" class="btn btn-success fancyClose">ok</a>
-        </div>
-    </div>
 
 	<div class="overlay"></div>
 
-	<div class="header-modal header-modal--opened">
+	<div class="modal-wrapper modal--opened">
 		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
 			<div class="fancybox-outer">
 				<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
-					<div id="callback" class="order-call-modal box-modal" style="display: block;">
-        <div class="box-modal_title">
-            <div class="box-modal_topic text-center text-warning" style="margin-left: 0px;">Заказ звонка</div>
-        </div>
-        <div class="box-modal_body rf">
-            <p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все вопросы!</p>
-            <form name="callback-form">
-                <div class="form-group">
-                    <input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
-                </div>
-                <div class="form-group">
-                    <input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
-                </div>
-                <div class="form-action">
-                    <div class="text-center"><button type="submit" class="btn btn-warning feedback">Свяжитесь со мной!</button></div>
-                </div>
-                <input type="hidden" name="page" value="Окна">
-            </form>
-            <span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
-        </div>
-    </div></div></div><span title="Close" class="header-modal__close">x</span></div></div>
+					<div id="callback" class="order-call-modal box-modal">
+						<div class="box-modal_title">
+							<div class="box-modal_topic text-center text-warning" style="margin-left: 0px;">Заказ звонка</div>
+						</div>
+						<div class="box-modal_body rf">
+							<p class="text-center">Оставьте, пожалуйста, заявку. Мы позвоним Вам в ближайшее время и ответим на все
+								вопросы!</p>
+							<form name="callback-form">
+								<div class="form-group">
+									<input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*"
+										data-mask="+7 (999) 999-99-99">
+								</div>
+								<div class="form-action">
+									<div class="text-center"><button type="submit" class="btn btn-warning feedback">Свяжитесь со
+											мной!</button></div>
+								</div>
+								<input type="hidden" name="page" value="Окна">
+							</form>
+							<span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет
+								распространяться.</span>
+						</div>
+					</div>
+				</div>
+			</div><span title="Close" class="modal__close">x</span>
+		</div>
+	</div>
 
-	<div class="services-modal services-modal--opened">
-			<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
-				<div class="fancybox-outer">
-					<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
-						<div id="application" class="order-call-modal box-modal" style="display: block;">
-			<div class="box-modal_title">
-				<div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Вызов замерщика</div>
+	<div class="modal-wrapper modal--opened">
+		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+			<div class="fancybox-outer">
+				<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
+					<div id="application" class="order-call-modal box-modal">
+						<div class="box-modal_title">
+							<div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Вызов замерщика</div>
+						</div>
+						<div class="box-modal_body rf">
+							<p class="text-center">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
+							<form name="application-form">
+								<div class="form-group">
+									<input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*"
+										data-mask="+7 (999) 999-99-99">
+								</div>
+								<div class="form-action">
+									<div class="text-center"><button type="submit" class="btn btn-success feedback">Вызвать
+											замерщика!</button></div>
+								</div>
+								<input type="hidden" name="page" value="Окна">
+								<input type="hidden" name="subject" value="Стандартные ПВХ-окна">
+							</form>
+							<span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет
+								распространяться.</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="box-modal_body rf">
-				<p class="text-center">Оставьте заявку и специалист свяжется с Вами в ближайшее время!</p>
-				<form name="application-form">
-					<div class="form-group">
-						<input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
+			<span title="Close" class="modal__close">x</span>
+		</div>
+	</div>
+
+	<div class="modal-wrapper modal--opened">
+		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+			<div class="fancybox-outer">
+				<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
+					<div id="order" class="order-call-modal box-modal">
+						<div class="box-modal_title">
+							<div class="box-modal_topic text-center text-success" style="margin-left: 0px;">Программа <br>«Профремонт»</div>
+						</div>
+						<div class="box-modal_body rf">
+							<p class="text-center">Оставьте, пожалуйста, заявку и мы свяжемся с Вами, чтобы рассказать детали акции и Вашу
+								скидку!</p>
+							<form name="order-form">
+								<div class="form-group">
+									<input type="text" name="fio" class="form-control required" placeholder="Ваше имя*">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*"
+										data-mask="+7 (999) 999-99-99">
+								</div>
+								<div class="form-action">
+									<div class="text-center"><button type="submit" class="btn btn-success feedback">Принять участие!</button></div>
+								</div>
+								<input type="hidden" name="page" value="Окна">
+							</form>
+							<span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
+						</div>
 					</div>
-					<div class="form-group">
-						<input type="text" name="phone" class="form-control required" placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99">
-					</div>
-					<div class="form-action">
-						<div class="text-center"><button type="submit" class="btn btn-success feedback">Вызвать замерщика!</button></div>
-					</div>
-					<input type="hidden" name="page" value="Окна">
-					<input type="hidden" name="subject" value="Стандартные ПВХ-окна">
-				</form>
-				<span class="help-block">Гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.</span>
+				</div>
 			</div>
-		</div></div></div>
-		<span title="Close" class="services-modal__close">x</span></div>
+			<span title="Close" class="modal__close">x</span>
+		</div>
+	</div>
+
+	<div class="modal-wrapper modal--opened">
+		<div class="fancybox-skin" style="padding: 0px; width: auto; height: auto;">
+			<div class="fancybox-outer">
+				<div class="fancybox-inner" style="overflow: hidden; width: 580px; height: 495px;">
+					<div class="box-modal" id="responseMessage">
+						<div class="box-modal_title">
+							<h2>Статус отправки формы:</h2>
+						</div>
+						<div class="box-modal_body">
+							<div class="modal-content"></div>
+							<br /><br />
+							<a href="#" class="btn btn-success fancyClose">ok</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span title="Close" class="modal__close">x</span>
+		</div>
 	</div>
 
 	<div class="smooth-scroll">
