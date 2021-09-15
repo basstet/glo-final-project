@@ -4,6 +4,7 @@
 import togglePopup from './modules/popup';
 import scrollTop from './modules/scrollTop';
 import Carousel from './modules/carousel';
+import timer from './modules/timer';
 
 // модальные окна:
 togglePopup();
@@ -44,3 +45,6 @@ const carouselServices = new Carousel({
   ]
 });
 carouselServices.init();
+
+// таймер:
+timer('18 september 2021');
