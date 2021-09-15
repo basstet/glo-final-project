@@ -5,6 +5,7 @@ import togglePopup from './modules/popup';
 import scrollTop from './modules/scrollTop';
 import Carousel from './modules/carousel';
 import timer from './modules/timer';
+import docsGallery from './modules/docsGallery';
 
 // модальные окна:
 togglePopup();
@@ -48,3 +49,6 @@ carouselServices.init();
 
 // таймер:
 timer('18 september 2021');
+
+// галерея "Сертификаты и документы":
+docsGallery();
