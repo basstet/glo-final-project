@@ -6,6 +6,7 @@ import scrollTop from './modules/scrollTop';
 import Carousel from './modules/carousel';
 import timer from './modules/timer';
 import docsGallery from './modules/docsGallery';
+import calc from './modules/calc';
 
 // модальные окна:
 togglePopup();
@@ -52,3 +53,6 @@ timer('18 september 2021');
 
 // галерея "Сертификаты и документы":
 docsGallery();
+
+// калькулятор:
+calc();
