@@ -7,6 +7,8 @@ import Carousel from './modules/carousel';
 import timer from './modules/timer';
 import docsGallery from './modules/docsGallery';
 import calc from './modules/calc';
+import validation from './modules/validation';
+import sendForm from './modules/sendForm';
 
 // модальные окна:
 togglePopup();
@@ -56,3 +58,9 @@ docsGallery();
 
 // калькулятор:
 calc();
+
+// валидация:
+validation();
+
+// отправка форм:
+sendForm();

@@ -1,4 +1,7 @@
 const calc = () => {
+  if (!document.getElementById('calc')) {
+    return;
+  }
   const calcBlock = document.getElementById('calc'),
         calcType = document.getElementById('calc-type'),
         calcMaterial = document.getElementById('calc-type-material'),
