@@ -720,6 +720,7 @@ p.services-image_mobile {
 .review-user img {
   border-radius: 100%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  max-width: 121px;
 }
 .review-green {
   background-color: #00902a;
@@ -760,8 +761,19 @@ p.services-image_mobile {
 .review-gray:after {
   background-position: -78px 0px;
 }
-.review-margin-bottom {
+.review-arrow-left.review-gray:after,
+.review-arrow-right.review-green:after,
+.review-arrow-right.review-orange:after {
+  transform: scale(-1, 1);
+}
+.comment-item {
   margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .comments-container .status-message {
+    position: relative;
+    left: -8.4%;
+  }
 }
 #about {
   background-color: #466a78;
@@ -1703,6 +1715,10 @@ input.error {
   height: 30px;
   position: relative;
   margin: auto;
+}
+.status-message .sk-double-bounce {
+  width: 50px;
+  height: 50px;
 }
 .sk-child {
   width: 100%;
