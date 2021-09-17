@@ -7,7 +7,7 @@ const validation = () => {
           elementsForm = [...form.elements].filter(item => item.tagName.toLowerCase() !== 'button' && item.type !== 'button' && item.type !== 'hidden'),
           pattern = {
             fio: /^[а-яё]{2,}[\sа-яё]*$/i,
-            phone: /(^\+\d{11}$)|(^\d{12}$)/
+            phone: /^\+?\d{11}$/
           };
 
     // проверка соответствия поля шаблону:
